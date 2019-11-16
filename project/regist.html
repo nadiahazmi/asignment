@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+      <link rel="stylesheet" href="regist.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="topnav">
+          <img src="logo.png" alt="logo">
+            <div class="topnav-right">
+              <li> <a href="home.html">HOME</a></li>
+
+              <div class="dropdown">
+                <button class="dropbtn">SUBMISSION
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="pdropdown">
+                  <a href="Call for Papers.html">Call for Papers</a>
+                  <a href="Submission Guidelines.html">Submission Guidelines</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn">PROGRAMME
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="pdropdown">
+                  <a href="conference-program.html">Conference Programme</a>
+                  <a href="parallel-session.html">Parallel Sessions</a>
+                  <a href="speaker.html">Keynote Speakers</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn">FEES & REGISTRATION
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="pdropdown">
+                  <a href="fees.html">Conference Fees</a>
+                  <a href="regist.html">Registration</a>
+                </div>
+              </div>
+              <li> <a href="contact.html">CONTACT</a></li>
+            </div>
+        </div>
+
+    <div class="body">
+
+    <fieldset>
+      <legend>Econference - Register</legend>
+
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+
+              <div class="row">
+                <div class="col-50">
+                  <h2>Payment</h2>
+
+                  <input type="radio" name="preffered" value="Credit Cards">Credit Cards <br>
+                        <br>
+                         <label for="fname">Accepted Cards</label>
+                         <div class="icon-container">
+                           <i class="fa fa-cc-visa" style="color:navy;"></i>
+                           <i class="fa fa-cc-amex" style="color:blue;"></i>
+                           <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                           <i class="fa fa-cc-discover" style="color:orange;"></i>
+                         </div>
+                         <label for="cname">Name on Card</label>
+                         <input type="text" id="cname" name="cardname">
+                         <label for="ccnum">Credit card number</label>
+                         <input type="text" id="ccnum" name="cardnumber">
+                         <label for="expmonth">Exp Month</label>
+                         <input type="text" id="expmonth" name="expmonth">
+
+                             <label for="expyear">Exp Year</label>
+                             <input type="text" id="expyear" name="expyear">
+
+
+                       <h3> -- OR -- </h3>
+
+                       <input type="radio" name="preffered" value="Debit Cards">Debit Cards <br>
+                       <br>
+                       <div>
+					              <label style="font-weight:bold;">Select Bank</label>
+					              <select name="data" id="bank_code">
+						               <option value="">-Select One-</option>
+												        <option>Affin Bank </option>
+												        <option>Alliance Bank </option>
+												        <option>AmBank </option>
+												        <option>BSN </option>
+												        <option>Bank Islam </option>
+												        <option>Bank Muamalat </option>
+												        <option>Bank Rakyat </option>
+												        <option>CIMB Clicks </option>
+												        <option>HSBC Bank </option>
+												        <option>Hong Leong Bank </option>
+												        <option>Maybank2U </option>
+												        <option>OCBC Bank </option>
+												        <option>Public Bank </option>
+												        <option>RHB Bank </option>
+												        <option>Standard Chartered </option>
+												        <option>UOB Bank </option>
+											</select>
+                      </div>
+				</div>
+
+                     </div>
+                     <input type="submit" value="Continue to checkout" class="btn">
+                   </form>
+                 </div>
+
+               </div>
+
+        <div class="col-25">
+          <div class="container">
+            <h3>Registration</h3>
+            <table class="conf">
+                  <tbody><tr>
+
+                      <input type="hidden" value="International Conference on Information &amp; Communication Technology for the Muslim World (ICT4M 2020)" id="RegisterEventsName">
+                          <td width="213px"><label class="input select required">Event Name</label></td>
+                          <td><div class="named">International Conference on Information &amp; Communication Technology for the Muslim World (ICT4M 2020)</div></td>
+                                  </tr>
+                  <tr>
+                                          <td><label class="input select required">Rate</label></td>
+                          <td>
+
+
+                              <select id="condValue" class="conf" onchange="return selectFirstAmount()">
+                              <option>Local Participant W/out Paper</option>
+                              <option>Intl. Participant W/out Paper</option>
+                              <option>Presenter (International)</option>
+                              <option>Presenter (Local)</option>
+                              <option>Student (Presenter)</option>
+                              <option>Exhibition</option>
+                              <option>Intl. Student (Presenter)</option>
+                              <option>Full-day Workshop(Non-Student)</option>
+                              <option>Mini Workshop (Non-Student)</option>
+                              <option>Presenter (additional 1 paper)</option>
+                              <option>Presenter(additional 2 papers)</option>
+                              <option>Mini Workshop (Student)</option>
+                              <option>Full-day Workshop (Student)</option>
+                          </select>
+                      </td>
+                  </tr>
+
+
+
+                  <tr>
+                      <td style="border:none;"><div class="input"><label>Participants name:</label></div></td>
+                      <td>
+                          <table id="part"><tbody id="files-root">
+
+                                  <tr id="participants" name="participants">
+                                      <td width="213px"><input type="text"></td>
+
+                                  </tr>
+                          </tbody></table>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <label class="required">Amount (excl. SST) </label>
+      				<input type="hidden" id="amount" value="600.00"></td>
+                      <td><div style="float:left;clear:none;margin-left: -6px;margin-top:-4px;">RM </div><div id="dummy" style="float:left;clear:none;margin-top:-4px;">600.00</div></td>
+                  </tr>
+      			<tr>
+                      <td>
+                          <label class="required">GST Amount</label>
+      					<input type="hidden" id="gst" value="0.00"></td>
+                      <td><div style="float:left;clear:none;margin-left: -6px;margin-top:-4px;">RM </div><div id="gstDummy" style="float:left;clear:none;margin-top:-4px;">0.00</div></td>
+                  </tr>
+      			<tr>
+                      <td>
+                          <label class="required">Total Amount (incl. GST)</label>
+      					<input type="hidden" id="totalAmount" value="600.00"></td>
+                      <td><div style="float:left;clear:none;margin-left: -6px;margin-top:-4px;">RM </div><div id="totalDummy" style="float:left;clear:none;margin-top:-4px;">600.00</div></td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <div class="input">
+                              <label for="RegisterOrganization">Organization</label>
+                          </div>
+                      </td>
+                      <td><input type="text" id="RegisterOrganization" maxlength="100"></td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <div class="input">
+                              <label for="RegisterContactPerson">Contact No</label>
+                          </div>
+                      </td>
+                      <td>
+                          Ex: 0123273849 / 0338463345
+                          <p>
+                              <input type="text" id="RegisterContactPerson">
+                      </p></td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <div class="input" style="font-weight:bold;">
+                              <label for="RegisterFaxNo">Fax No</label>
+                          </div>
+                      </td>
+                      <td>
+                          Ex: 0123273849 / 0338463345
+                          <p>
+                              <input type="text">
+                      </p></td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <div class="input">
+                              <label for="RegisterEmail">Email</label>
+                          </div>
+                      </td>
+                      <td><input type="text" id="RegisterEmail" maxlength="50" class="conf"></td>
+                  </tr>
+
+              </tbody></table>
+      </div>
+
+    </fieldset>
+
+      </div>
+
+      <div class="footer">
+        <img src="logo.png" alt="flogo">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <i class="fa fa-facebook-official" style="font-size:30px;color:white"></i>
+          <i class="fa fa-twitter-square" style="font-size:30px;color:white"></i>
+
+        <footer>Any inquiries please email our secretariat
+          at ict4m@iium.edu.my or call +603-6196 5601</footer>
+      </div>
+
+
+  </body>
+</html>
