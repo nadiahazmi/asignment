@@ -1,0 +1,183 @@
+body, html{
+  margin: 0;
+  background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.topnav{
+  overflow:hidden;
+  background-color: #666798;
+  padding: 10px;
+  padding-right: 8%;
+}
+img{
+  width: 150px;
+  padding: 5px;
+}
+li{
+  display: inline;
+}
+.topnav a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+  font-size: 17px;
+}
+.topnav-right {
+  float: right;
+  list-style-type: none;
+}
+.topnav a:active{
+  font-weight: bold;
+}
+.topnav img{
+  margin-left: 8%;
+  width: 7%;
+}
+.toppage{
+  display: block;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  color: #ddd;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding-top: 15px;
+  padding-right: 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  font-weight: bold;
+}
+
+.pdropdown{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.pdropdown a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.pdropdown a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .pdropdown {
+  display: block;
+}
+
+#mainContainer{
+  margin: 0 auto;
+  width: 90%;
+}
+#content-section{
+    background-color: white;
+    margin-top:-18px;
+    width:90%;
+    padding-bottom: 50px;
+}
+
+.header img{
+  width:90%;
+  padding: 0px;
+}
+
+h1{
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  right: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.submission-content{
+  display: block;
+  margin: auto;
+  height: 500px;
+  width: 100%;
+}
+.submission-content p{
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 17px;
+}
+.guidelines{
+  margin: 50px;
+  margin-top: 0;
+  padding: 90px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+#noshowpolicy{
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+#noshowpolicydetails{
+  color:black;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 17px;
+  margin:50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 90px;
+  padding-top: 10px;
+}
+footer {
+  background-color: #666798;
+  padding: 20px;
+}
+
+.footer footer{
+  text-align: center;
+  color: white;
+}
+
+  .footer img{
+    float: left;
+    padding-top: 2px;
+    margin-left: 9%;
+    width: 7%;
+  }
+
+  div.sns{
+    padding-right: 9%;
+  }
+  .footer i{
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
